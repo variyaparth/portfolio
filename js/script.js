@@ -29,7 +29,7 @@ const hamburger = document.getElementById('hamburger');
 const navMenu = document.querySelector('.nav-menu');
 
 hamburger.addEventListener('click', () => {
-    navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
+    navMenu.classList.toggle('active');
     
     // Animate hamburger
     hamburger.classList.toggle('active');
@@ -39,7 +39,7 @@ hamburger.addEventListener('click', () => {
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
         if (window.innerWidth <= 768) {
-            navMenu.style.display = 'none';
+            navMenu.classList.remove('active');
             hamburger.classList.remove('active');
         }
     });
@@ -48,7 +48,7 @@ navLinks.forEach(link => {
 // Reset inline menu styles when switching back to desktop
 window.addEventListener('resize', () => {
     if (window.innerWidth > 768) {
-        navMenu.style.display = '';
+        navMenu.classList.remove('active');
         hamburger.classList.remove('active');
     }
 });
@@ -166,6 +166,14 @@ let latestMouseY = 0;
 let animationFrameId = null;
 
 function animateFloatingCards() {
+    if (window.innerWidth <= 768) {
+        floatingCards.forEach((card) => {
+            card.style.transform = 'translate3d(0, 0, 0)';
+        });
+        animationFrameId = null;
+        return;
+    }
+
     const scrollShift = latestScrollY * 0.03;
     const mouseShiftX = (latestMouseX - 0.5) * 10;
     const mouseShiftY = (latestMouseY - 0.5) * 10;
