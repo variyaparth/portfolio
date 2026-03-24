@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Parth - Portfolio | Creative Web Developer & Vibe Coder">
+    <title>Parth | Portfolio - Vibe Coder</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">Parth</span>
+                <span class="logo-dot">.</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="hamburger" id="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1 class="hero-title">
+                    <span class="text-gradient">Hi, I'm Parth</span>
+                </h1>
+                <p class="hero-subtitle">17 | Vibe Coder | Building Creative Web Experiences</p>
+                <p class="hero-description">
+                    I create beautiful, interactive websites with smooth animations and modern design. 
+                    Passionate about writing clean code and crafting digital experiences that vibe.
+                </p>
+                <div class="button-group">
+                    <a href="#projects" class="btn btn-primary">View My Work</a>
+                    <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card card-1"></div>
+                <div class="floating-card card-2"></div>
+                <div class="floating-card card-3"></div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a 17-year-old passionate about web development and creating digital experiences 
+                        that feel smooth and intuitive. My journey into coding started with curiosity, and now 
+                        I'm obsessed with building things on the web.
+                    </p>
+                    <p>
+                        As a "Vibe Coder," I believe in the intersection of aesthetics and functionality. 
+                        Every project is an opportunity to learn something new and push my creative boundaries.
+                    </p>
+                    <p>
+                        When I'm not coding, you'll find me exploring new design trends, experimenting with 
+                        animations, or just enjoying the creative process of bringing ideas to life.
+                    </p>
+                    <div class="about-stats">
+                        <div class="stat">
+                            <h3>10K+</h3>
+                            <p>Lines of Code</p>
+                        </div>
+                        <div class="stat">
+                            <h3>100%</h3>
+                            <p>Passion</p>
+                        </div>
+                        <div class="stat">
+                            <h3>∞</h3>
+                            <p>Learning</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">
+                        <i class="fas fa-code"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Skills & Technologies</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <i class="fab fa-html5"></i>
+                    <h3>HTML & CSS</h3>
+                    <p>Semantic markup & modern styling</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-js"></i>
+                    <h3>JavaScript</h3>
+                    <p>Interactive & dynamic experiences</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-react"></i>
+                    <h3>React</h3>
+                    <p>Component-based architecture</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-node"></i>
+                    <h3>Node.js</h3>
+                    <p>Backend & server-side logic</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-database"></i>
+                    <h3>Databases</h3>
+                    <p>MongoDB, SQL & data management</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fab fa-git"></i>
+                    <h3>Git & GitHub</h3>
+                    <p>Version control & collaboration</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>UI/UX Design</h3>
+                    <p>Responsive & beautiful interfaces</p>
+                </div>
+                <div class="skill-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Mobile Responsive</h3>
+                    <p>Works great on all devices</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-play-circle"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>SyncTube</h3>
+                        <p>Watch together experience focused on synchronized playback and smooth real-time interaction.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Real-time</span>
+                            <span class="tag">Web App</span>
+                        </div>
+                        <a href="https://github.com/variyaparth/SyncTube" target="_blank" rel="noopener noreferrer" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-hand-paper"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>gesturedrive-ai</h3>
+                        <p>Gesture-powered control project using AI ideas to drive intuitive hands-free interactions.</p>
+                        <div class="project-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Automation</span>
+                        </div>
+                        <a href="https://github.com/variyaparth/gesturedrive-ai" target="_blank" rel="noopener noreferrer" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>message</h3>
+                        <p>Messaging-focused application built for clean communication workflows and quick interactions.</p>
+                        <div class="project-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Messag  ing</span>
+                            <span class="tag">Frontend</span>
+                        </div>
+                        <a href="https://github.com/variyaparth/message" target="_blank" rel="noopener noreferrer" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>AirCanvas</h3>
+                        <p>Draw in the air with gesture input and real-time visual feedback for creative interaction.</p>
+                        <div class="project-tags">
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">OpenCV</span>
+                            <span class="tag">Python</span>
+                        </div>
+                        <a href="https://github.com/variyaparth/AirCanvas" target="_blank" rel="noopener noreferrer" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-mouse-pointer"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>vmouse</h3>
+                        <p>Virtual mouse control system using gesture detection to move and click without hardware input.</p>
+                        <div class="project-tags">
+                            <span class="tag">Gesture Control</span>
+                            <span class="tag">Automation</span>
+                            <span class="tag">CV</span>
+                        </div>
+                        <a href="https://github.com/variyaparth/vmouse" target="_blank" rel="noopener noreferrer" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fas fa-sparkles"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Aura</h3>
+                        <p>Creative project focused on polished UI, smooth transitions, and modern digital experience.</p>
+                        <div class="project-tags">
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Web</span>
+                            <span class="tag">Design</span>
+                        </div>
+                        <a href="https://github.com/variyaparth/Aura" target="_blank" rel="noopener noreferrer" class="project-link">View Project <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="image-placeholder-project">
+                            <i class="fab fa-github"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>More Projects</h3>
+                        <p>Explore the full collection of my repositories, experiments, and ongoing builds on GitHub.</p>
+                        <div class="project-tags">
+                            <span class="tag">GitHub</span>
+                            <span class="tag">Open Source</span>
+                            <span class="tag">Portfolio</span>
+                        </div>
+                        <a href="https://github.com/variyaparth?tab=repositories" target="_blank" rel="noopener noreferrer" class="project-link">View All <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="contact-subtitle">Have a project in mind? Let's work together!</p>
+            
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <a href="mailto:parthvariya10@gmail.com">parthvariya10@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>surat</p>
+                        </div>
+                    </div>
+                    <div class="info-item">
+                        <i class="fab fa-twitter"></i>
+                        <div>
+                            <h3>X (Twitter)</h3>
+                            <a href="https://x.com/parthvariya13" target="_blank" rel="noopener noreferrer">@parthvariya13</a>
+                        </div>
+                    </div>
+                </div>
+
+                <form class="contact-form" id="contact-form" action="https://formsubmit.co/ajax/parthvariya10@gmail.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Portfolio Contact Message">
+                    <input type="hidden" name="_captcha" value="false">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <div class="social-links">
+                <h3>Follow Me</h3>
+                <div class="social-icons">
+                    <a href="https://github.com/variyaparth" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://x.com/parthvariya13" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="X">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/parth-variya-93bbb5267/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://www.instagram.com/yng_.parth/" target="_blank" rel="noopener noreferrer" class="social-icon" aria-label="Instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Download Section -->
+    <section class="resume-section">
+        <div class="container">
+            <h3>Want My Resume?</h3>
+            <a href="assets/Parth-Resume.txt" download="Parth-Variya-Resume.txt" class="btn btn-primary">
+                <i class="fas fa-download"></i> Download Resume
+            </a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; <span class="year">2026</span> Parth | Vibe Coder. All rights reserved.</p>
+            <p>Email: <a href="mailto:parthvariya10@gmail.com">parthvariya10@gmail.com</a></p>
+            <p>Designed & Built with passion using HTML, CSS & JavaScript</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
