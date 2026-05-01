@@ -321,7 +321,8 @@ function updateYear() {
 updateYear();
 
 // Debounce function for performance
-function debounce(func, wait) {
+function debcp /path/to/your/Cert-A.jpg "assets/certificate1.jpg"
+cp /path/to/your/Cert-B.pdf "assets/certificate2.pdf"ounce(func, wait) {
     let timeout;
     return function executedFunction(...args) {
         const later = () => {
