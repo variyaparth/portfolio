@@ -278,14 +278,12 @@ function typeText(element, text, speed = 50) {
     type();
 }
 
-// Optional: Uncomment to enable typed animation on hero subtitle
-// window.addEventListener('load', () => {
-//     const subtitle = document.querySelector('.hero-subtitle');
-//     if (subtitle) {
-//         const text = subtitle.textContent;
-//         typeText(subtitle, text, 30);
-//     }
-// });
+ window.addEventListener('load', () => {     const subtitle = document.querySelector('.hero-subtitle');
+   if (subtitle) {
+        const text = subtitle.textContent;
+       typeText(subtitle, text, 30);
+   }
+})
 
 // ==================== MOUSE FOLLOW EFFECT ====================
 document.addEventListener('mousemove', (e) => {
